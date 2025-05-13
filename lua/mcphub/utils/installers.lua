@@ -35,7 +35,7 @@ local Installers = {
             if not prompt then
                 return
             end
-            local sidebar = require("avante.sidebar")
+            local sidebar = require("avante").get()
             sidebar:new_chat()
             sidebar:add_chat_history({
                 role = "user",
